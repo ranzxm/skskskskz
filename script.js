@@ -34,7 +34,7 @@ if (cf1 === true ) {
 	alert("pibesdey !!");
 	var jw1 = prompt("kamu mau hadiah?");
 	if (jw1 === "mau") {
-		window.location.href("https://youtu.be/iik25wqIuFo");
+		window.location.href = "https://youtu.be/iik25wqIuFo";
 	}
 } else {
 	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
