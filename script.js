@@ -13,7 +13,7 @@ function namaNull() {
 	alert("jangan dicancel dong, tadi katanya boleh minta waktunya :(")
 	kondisiNama();
 }
-function kondisiNama(){
+function kondisiNama() {
 	kenalan();
 	while (nama === "") {
 		namaKosong();
@@ -24,7 +24,6 @@ function kondisiNama(){
 }
 
 
-
 cf1 = confirm("boleh minta waktunya seumur hidup?");
 
 if (cf1 === true ) {
@@ -32,10 +31,11 @@ if (cf1 === true ) {
 	alert("hai " + nama + " salam kenal, kenalin nama aku franss ");
 	alert("ehh, kamu kemarin ultah ya?");
 	alert("pibesdey !!");
-	var jw1 = prompt("kamu mau hadiah?");
+	var jw1 = prompt("kamu mau hadiah? ketik mau/ga");
 	if (jw1 === "mau") {
 		window.location.href = "https://youtu.be/iik25wqIuFo";
 	}
+	
 } else {
 	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
 }
