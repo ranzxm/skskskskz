@@ -32,11 +32,12 @@ if (cf1 === true ) {
 	alert("hai " + nama + " salam kenal, kenalin nama aku franss ");
 	alert("ehh, kamu kemarin ultah ya?");
 	alert("pibesdey !!");
-	alert("kamu mau hadiah?")
-	if (cf2 == "mau") {
-
+	var jw1 = prompt("kamu mau hadiah?");
+	if (jw1 == "mau") {
+		window.location.href("https://youtu.be/iik25wqIuFo");
+	} else if (jw === "ga") {
+		document.getElementById("pesan").innerHTML = "okeyy, semoga harimu senin terus");
 	}
-	
 } else {
 	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
 }
