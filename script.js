@@ -11,14 +11,9 @@ function namaKosong() {
 
 function namaNull() {
 	alert("jangan dicancel dong, tadi katanya boleh minta waktunya :(")
-	kenalan();
+	kondisiNama();
 }
-
-
-
-cf1 = confirm("boleh minta waktunya seumur hidup?");
-
-if (cf1 === true ) {
+function kondisiNama(){
 	kenalan();
 	while (nama === "") {
 		namaKosong();
@@ -26,6 +21,14 @@ if (cf1 === true ) {
 	while (nama === null) {
 		namaNull();
 	}
+}
+
+
+
+cf1 = confirm("boleh minta waktunya seumur hidup?");
+
+if (cf1 === true ) {
+	kondisiNama();
 	alert("hai " + nama + " salam kenal, kenalin nama aku franss ");
 	alert("ehh, kamu kemarin ultah ya?");
 	alert("pibesdey !!");
