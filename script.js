@@ -1,4 +1,4 @@
-var cf1,cf2,nama;
+var cf1,cf2,nama,jw1;
 
 function kenalan() {
 	nama = prompt("kenalan dulu, nama kamu siapa?");
@@ -23,18 +23,21 @@ function kondisiNama() {
 	}
 }
 
-function pertanyaan() {	
-	var jw1 = prompt("kamu mau hadiah? ketik mau/ga");
+function pertanyaanHadiah() {
+	jw1 = prompt("kamu mau hadiah? ketik mau/ga");
+	mauHadiah();
 }
 
 function mauHadiah() {
 	if (jw1 === "mau") {
-		document.getElementById("rrjp").style.display="inline";
-	} else if (jw === "ga") {
-		document.getElementById("pesan").innerHTML= "yaudah kalo gamau, byeee !";
+		document.getElementById("rrjp").style.display = "inline";
+	} else if (jw1 === "ga") {
+		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!";
 	} else {
-		pertanyaan();	
+		alert("jawab dong mau/ga");
+		pertanyaanHadiah();
 	}
+
 }
 
 
@@ -45,8 +48,9 @@ if (cf1 === true ) {
 	alert("hai " + nama + " salam kenal, kenalin nama aku franss ");
 	alert("ehh, kamu kemarin ultah ya?");
 	alert("pibesdey !!");
-	pertanyaan();
+	pertanyaanHadiah();
 	mauHadiah();
+	
 	
 } else {
 	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
