@@ -23,6 +23,20 @@ function kondisiNama() {
 	}
 }
 
+function pertanyaan() {	
+	var jw1 = prompt("kamu mau hadiah? ketik mau/ga");
+}
+
+function mauHadiah() {
+	if (jw1 === "mau") {
+		document.getElementById("rrjp").style.display="inline";
+	} else if (jw === "ga") {
+		document.getElementById("pesan").innerHTML= "yaudah kalo gamau, byeee !";
+	} else {
+		pertanyaan();	
+	}
+}
+
 
 cf1 = confirm("boleh minta waktunya seumur hidup?");
 
@@ -31,10 +45,8 @@ if (cf1 === true ) {
 	alert("hai " + nama + " salam kenal, kenalin nama aku franss ");
 	alert("ehh, kamu kemarin ultah ya?");
 	alert("pibesdey !!");
-	var jw1 = prompt("kamu mau hadiah? ketik mau/ga");
-	if (jw1 === "mau") {
-		document.getElementById("rrjp").style.display="inline";
-	}
+	pertanyaan();
+	mauHadiah();
 	
 } else {
 	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
