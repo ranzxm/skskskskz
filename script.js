@@ -46,7 +46,7 @@ function mauHadiah() {
 	if (jw1 === "mau") {
 		document.getElementById("rrjp").style.display = "inline";
 	} else if (jw1 === "ga") {
-		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!" + typeof nama;
+		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!";
 	} else {
 		alert("jawab dong mau/ga");
 		pertanyaanHadiah();
