@@ -1,7 +1,21 @@
-var cf1,cf2,nama,jw1;
+var cf1,cf2,jw1;
+const nama = ["default"];
+var namaDil = ["kontol", "memek", "pepek", "babi", "anjing", "anj", "bbi", "kntl", "mmk", "k0nt0l","m3m3k", "m3mek", "mek", "mem3k", "k0ntol", "kont0l", "njir", "anjir", "4njir", "anj1r", "4nj1r", "kw0ntol", "kw0nt0l", "kwont0l"];
+var namaDilLen = namaDil.length;
+
+function namaKotor() {
+	for(let i= 0; i < namaDilLen; i++) {
+		if (nama[0].toLowerCase() === namaDil[i]) {
+			alert("nama yang kamu masukkan sepertinya tidak benar");
+			kenalan();
+		}
+	}
+	
+}
 
 function kenalan() {
-	nama = prompt("kenalan dulu, nama kamu siapa?");
+	nama[0] = prompt("kenalan dulu, nama kamu siapa?".toLowerCase());
+	namaKotor();
 }
 
 function namaKosong() {
@@ -32,7 +46,7 @@ function mauHadiah() {
 	if (jw1 === "mau") {
 		document.getElementById("rrjp").style.display = "inline";
 	} else if (jw1 === "ga") {
-		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!";
+		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!" + typeof nama;
 	} else {
 		alert("jawab dong mau/ga");
 		pertanyaanHadiah();
@@ -53,5 +67,5 @@ if (cf1 === true ) {
 	
 	
 } else {
-	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)"
+	document.getElementById("pesan").innerHTML = "sampai jumpa dilain waktu, mungkin belum jodoh :)";
 }
