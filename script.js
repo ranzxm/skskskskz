@@ -1,6 +1,6 @@
 var cf1,cf2,jw1;
 const nama = ["default"];
-var namaDil = ["kontol", "memek", "kontoi", "pepek", "babi", "anjing", "anj", "bbi", "kntl", "mmk", "k0nt0l","m3m3k", "m3mek", "mek", "mem3k", "k0ntol", "kont0l", "njir", "anjir", "4njir", "anj1r", "4nj1r", "kw0ntol", "kw0nt0l", "kwont0l"];
+var namaDil = ["kontol", "memek", "pepek", "babi", "anjing", "anj", "bbi", "kntl", "mmk", "k0nt0l","m3m3k", "m3mek", "mek", "mem3k", "k0ntol", "kont0l", "njir", "anjir", "4njir", "anj1r", "4nj1r", "kw0ntol", "kw0nt0l", "kwont0l"];
 var namaDilLen = namaDil.length;
 
 function namaKotor() {
@@ -46,7 +46,7 @@ function mauHadiah() {
 	if (jw1 === "mau") {
 		document.getElementById("rrjp").style.display = "inline";
 	} else if (jw1 === "ga") {
-		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!";
+		document.getElementById("pesan").innerHTML = "yaudah kalo gamau, byee!!" + typeof nama;
 	} else {
 		alert("jawab dong mau/ga");
 		pertanyaanHadiah();
