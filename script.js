@@ -15,24 +15,25 @@ function namaKotor() {
 
 function kenalan() {
 	nama[0] = prompt("kenalan dulu, nama kamu siapa?".toLowerCase());
+	kondisiNama();
 	namaKotor();
+	
 }
 
 function namaKosong() {
 	alert("nama kamu isi dong, gaboleh dikosongin :(");
-	kenalan();
+	kenalan()
 }
 
 function namaNull() {
-	alert("jangan dicancel dong, tadi katanya boleh minta waktunya :(")
-	kondisiNama();
+	alert("jangan dicancel dong, tadi katanya boleh minta waktunya :(");
+	kenalan();
 }
 function kondisiNama() {
-	kenalan();
-	while (nama === "") {
+	while (nama[0] === "") {
 		namaKosong();
 	}
-	while (nama === null) {
+	while (nama[0] === null) {
 		namaNull();
 	}
 }
@@ -56,6 +57,7 @@ function mauHadiah() {
 
 
 cf1 = confirm("boleh minta waktunya seumur hidup?");
+kenalan();
 
 if (cf1 === true ) {
 	kondisiNama();
